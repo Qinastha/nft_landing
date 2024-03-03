@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Project NFT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0b72297cd6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img class="navbar-brand" src="assets/logo.svg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="justify-content-between customLinks">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href=".home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=".gem_container">Gems</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=".top_collections">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=".activityContainer">Activity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=".videoСontainer">Discover</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex navModal">
+            <!-- MODAL POPUP -->
+            <button data-modal-target-nav="#navModal" class="btn navModalButton" value="Click me">
+              <img class="walletImg" src="./assets/wallet-one.svg" alt="wallet">
+              Connect Wallet
+            </button>
+            <div class="navModalDiv" id="navModal">
+              <div class="navModalHeader">
+                <div class="navModalTitle">Connect Wallet</div>
+                <button data-close-button-nav type="button" class="btn-close navCloseButton">&times;</button>
+              </div>
+              <div class="navModalBody">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum lectus
+                a nunc interdum luctus. Etiam convallis libero ante, quis rutrum orci ullamcorper et.
+                Duis vestibulum vehicula arcu sed efficitur. Vivamus quis elit scelerisque, finibus
+                ante id, fringilla metus. Nullam lectus magna, sollicitudin eu fermentum commodo,
+                pharetra sit amet turpis. Cras sodales commodo ante ac euismod. Aenean magna ante,
+                tempus maximus vestibulum ut, vehicula non erat. Nullam euismod malesuada efficitur.
+                Donec fringilla vel nunc ac semper. Mauris ut magna dictum.
+              </div>
+            </div>
+            <div id="navOverlay"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <div class="homeImgContainer d-flex home">
+      <div class="d-flex flex-column flex-grow-2 justify-content-start align-items-middle">
+        <p class="pt-5 greyText ">Exclusive NFT for Digital and Real-world Assets</p>
+        <h3 class="pt-3 pb-3">The world's first non-fungible token (NFT) marketplace for both digital and physical
+          assets.</h3>
+
+        <!--SIMPLE POPUP-->
+        <button class="homeModalButton d-flex align-items-center justify-content-center" id="popup-link"
+          data-modal-target-home="homeModal">Create</button>
+        <div class="homeModalDiv" id="homeModal">
+          <div class="homeModalHeader">
+            <div class="homeModalTitle">Test of creation</div>
+            <button data-close-button-home type="button" class="btn-close homeCloseButton">&times;</button>
+          </div>
+          <div class="homeModalBody">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum lectus
+              a nunc interdum luctus. Etiam convallis libero ante, quis rutrum orci ullamcorper et.
+              Duis vestibulum vehicula arcu sed efficitur. Vivamus quis elit scelerisque, finibus
+              ante id, fringilla metus. Nullam lectus magna, sollicitudin eu fermentum commodo,
+              pharetra sit amet turpis. Cras sodales commodo ante ac euismod. Aenean magna ante,
+              tempus maximus vestibulum ut, vehicula non erat. Nullam euismod malesuada efficitur.
+              Donec fringilla vel nunc ac semper. Mauris ut magna dictum.
+            </p>
+          </div>
+        </div>
+        <div id="homeOverlay"></div>
+      </div>
+      <img class="sphere" src="./assets/sphere.svg" alt="sphere">
+    </div>
+
+    <div class="gemContainer container-fluid">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3 class="flex-start">Hidden Gems</h3>
+        <button class="flex-end openHidden"> View All</button>
+      </div>
+
+      <div class="row align-items-center justify-content-center d-flex">
+        <!-- For initial gems-->
+        <div class="row fetchedItemsContainer"></div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid topCollectionContainer">
+      <div class="collection d-flex justify-content-between">
+        <h3 class="flex-start">Top Collections</h3>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 collectionItem">
+          <custom-element-card class="container" image-src="assets/collections1.svg" logo-src="assets/logo1.svg"
+            part1text1="World of Women Galaxy" part1text2="By Organization Woman" part2text1="Price"
+            part2text2="0.218 ETH"></custom-element-card>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 collections">
+          <custom-element-card class="container" image-src="assets/collections2.svg" logo-src="assets/logo2.svg"
+            part1text1="Azuki #958" part1text2="By Azuki" part2text1="Price"
+            part2text2="0.587 ETH"></custom-element-card>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 collections">
+          <custom-element-card class="container" image-src="assets/collections3.svg" logo-src="assets/logo3.svg"
+            part1text1="Yolk Folks" part1text2="Fufu Prophet" part2text1="Price"
+            part2text2="1.048 ETH"></custom-element-card>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 collections">
+          <custom-element-card class="container" image-src="assets/collections4.svg" logo-src="assets/logo4.svg"
+            part1text1="Earth Mooncakey" part1text2="By Mooncakes" part2text1="Price"
+            part2text2="2.756 ETH"></custom-element-card>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 collections">
+          <custom-element-card class="container" image-src="assets/collections5.svg" logo-src="assets/logo5.svg"
+            part1text1="Corrupt Floppy Disk" part1text2="By The Transmission " part2text1="Price"
+            part2text2="0.218 ETH"></custom-element-card>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 collections">
+          <custom-element-card class="container" image-src="assets/collections6.svg" logo-src="assets/logo6.svg"
+            part1text1="Ape Episode #128" part1text2="By Bored Ape Yacht" part2text1="Price"
+            part2text2="2.756 ETH"></custom-element-card>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 collections">
+          <custom-element-card class="container" image-src="assets/collections7.svg" logo-src="assets/logo7.svg"
+            part1text1="Neo R #028" part1text2="By  Watari" part2text1="Price"
+            part2text2="0.587 ETH"></custom-element-card>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 collections">
+          <custom-element-card class="container" image-src="assets/collections8.svg" logo-src="assets/logo8.svg"
+            part1text1="Yact Mutant Academy" part1text2="By Mutant Ape Yacht" part2text1="Price"
+            part2text2="1.048 ETH"></custom-element-card>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div class="activityContainer">
+      <h3 class="">Create and sell your NFTs</h3>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 pt-5 d-flex justify-content-center ">
+          <div class="activityItem">
+            <img class="activityImg" src="./assets/wallet-one.svg" alt="sell_icons">
+            <div class="activityBody pt-3">
+              <h6>Set up your wallet</h6>
+              <p>Once you’ve set up your wallet of choice, connect it to
+                OpenSea by clicking the wallet icon in the top right corner.
+                Learn about the wallets we support.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 pt-5 d-flex justify-content-center ">
+          <div class="activityItem">
+            <img class="activityImg" src="./assets/triangle-round-rectangle.svg" alt="sell_icons">
+            <div class="activityBody pt-3">
+              <h6>Create your collection</h6>
+              <p>Click My Collections and set up your collection.
+                Add social links, a description, profile & banner images, and set a secondary sales fee.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 pt-5 d-flex justify-content-center ">
+          <div class="activityItem">
+            <img class="activityImg" src="./assets/picture.svg" alt="sell_icons">
+            <div class="activityBody pt-3">
+              <h6>Add your NFTs</h6>
+              <p>Upload your work (image, video, audio, or 3D art),
+                add a title and description, and customize your NFTs with properties, stats, and
+                unlockable content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 pt-5 d-flex justify-content-center">
+          <div class="activityItem">
+            <img class="activityImg align-items-center" src="./assets/shopping-bag.svg" alt="sell_icons">
+            <div class="activityBody pt-3">
+              <h6>List them for sale</h6>
+              <p>Choose between auctions, fixed-price listings, and
+                declining-price listings. You choose how you want to sell your NFTs, and
+                we help you sell them!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="videoСontainer">
+      <h3 class="title_above_video">Discover the latest #TOPNFT</h3>
+      <p class="gradienText">The NFT marketplace with everything for everyone</p>
+      <div class="playerDiv container">
+        <video class="musicVideo" poster="assets/image.5dcd1a98bf49c.jpg">
+          <source src="assets/Guano Apes - Open Your Eyes (Official Video).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button class="btn play_toggle">
+          <img class="img_play" src="assets/play.svg" alt="play"></button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="row pt-5 pb-5 d-flex align-items-center justify-content-between">
+
+      <div class="col-12 col-md-6 col-lg-6 d-flex flex-column">
+        <img class="logo" src="assets/logo.svg" alt="logo">
+        <h6 class="pt-3">THEFUND</h6>
+        <p class="footerText pt-4">TheFund is the world's first non-fungible token (NFT) marketplace for both digital
+          and physical assets</p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 d-flex flex-column justify-content-end">
+        <p class="d-flex justify-content-end footerGradientText">Follow us on:</p>
+        <div class="footerIcons">
+          <a href="https://t.me/+dBSi4-Z4b3MzZDk6"><img class="footerLinkImg" src="assets/telegram.svg"></a>
+          <a href="https://twitter.com/cryinggsilence"><img class="footerLinkImg" src="assets/twitter.svg"></a>
+          <a href="https://www.youtube.com/@Meteora_sfx"><img class="footerLinkImg" src="assets/youtube.svg"></a>
+
+          <a href="https://www.facebook.com/TypeMoonWorld/?locale=ru_RU"><img class="footerLinkImg"
+              src="assets/facebook.svg"></a>
+          <a href="https://www.instagram.com/mightyworks_/"><img class="footerLinkImg" src="assets/instagram.svg"></a>
+          <a href="https://www.tiktok.com/@mitskileaks"><img class="footerLinkImg" src="assets/tiktok.svg"></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>

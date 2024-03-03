@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "ZombieClub Token",
+    "image": "assets/gem1.svg",
+    "creator": "ZombieLab",
+    "description": "Zombie Lab is a collection of 10,000 animated NFTs. Each NFT is unique and resides on the Ethereum blockchain. Your Zombie Lab Club NFT will double as your club membership.",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "name": "Meta Bounty Hunters",
+    "image": "assets/gem2.svg",
+    "creator": "B30898",
+    "description": "Meta Bounty Hunters is a first of its kind  community and collective of elite members who share a community-first mindset and are focused on giving back to its NFT holders through the Reflection Rewards.",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "name": "Treeverse Plots",
+    "image": "assets/gem3.svg",
+    "creator": "Treeverse_Wallet",
+    "description": "Treeverse is an open-world, fantasy MMORPG with a MOBA-style combat system. Slay beasts, forge mighty weapons, lure the biggest fish, form guilds, defeat dungeons",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "name": "ZombieClub Token",
+    "image": "assets/gem3.svg",
+    "creator": "ZombieLab",
+    "description": "Zombie Lab is a collection of 10,000 animated NFTs. Each NFT is unique and resides on the Ethereum blockchain. Your Zombie Lab Club NFT will double as your club membership.",
+    "verified": true
+  },
+  {
+    "id": 5,
+    "name": "ZombieClub Token",
+    "image": "assets/gem2.svg",
+    "creator": "ZombieLab",
+    "description": "Zombie Lab is a collection of 10,000 animated NFTs. Each NFT is unique and resides on the Ethereum blockchain. Your Zombie Lab Club NFT will double as your club membership.",
+    "verified": true
+  },
+  {
+    "id": 6,
+    "name": "ZombieClub Token",
+    "image": "assets/gem1.svg",
+    "creator": "ZombieLab",
+    "description": "Zombie Lab is a collection of 10,000 animated NFTs. Each NFT is unique and resides on the Ethereum blockchain. Your Zombie Lab Club NFT will double as your club membership.",
+    "verified": true
+  }
+]
